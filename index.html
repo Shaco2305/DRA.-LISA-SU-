@@ -1,0 +1,103 @@
+<html>  
+<head>
+    <title>ANIMACIONES CSS - ANIMATION</title>
+    <style>
+
+    h1{
+        font-family: "century gothic";
+        color: rgba(165, 42, 42, 0);
+        text-align: center;
+
+        animation: titulo 3s forwards;
+    }
+
+    @keyframes titulo{
+        from{ color: rgba(128, 0, 128, 0); }
+        to{ color: rgba(128, 0, 128, 1); }
+    }
+
+    h2{
+        text-align: center;
+        font-family: "century gothic";
+        opacity: 0;
+
+        animation: aparecer 3s 3s forwards;
+    }
+
+    p{
+        text-align: center;
+        font-family: "century gothic";
+        font-weight: bold;
+        opacity: 0;
+
+        width: 60%;
+        margin: 20px auto;
+        line-height: 1.5;
+    }
+
+    .p1{
+        animation: texto 3s 9s forwards;
+    }
+
+    .p2{
+        animation: texto 3s 15s forwards;
+    }
+
+    @keyframes texto{
+        from{ opacity: 0; }
+        to{ opacity: 1; }
+    }
+
+    img{
+        height: 200px;
+        width: 200px;
+        display: block;
+        margin: auto;
+        opacity: 0;
+    }
+
+    .img1{
+        animation: imagen 3s 6s forwards;
+    }
+
+    .img2{
+        animation: imagen 3s 12s forwards;
+    }
+
+    @keyframes imagen{
+        from{ opacity: 0; }
+        to{ opacity: 1; }
+    }
+
+    @keyframes aparecer{
+        from{ opacity: 0; }
+        to{ opacity: 1; }
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>DRA. LISA SU</h1>
+
+    <h2>CEO de AMD y líder en innovación tecnológica</h2>
+
+    <img src="img/lisa1.avif" class="img1">
+
+    <p class="p1">
+    La Dra. Lisa Su es una ingeniera eléctrica y ejecutiva reconocida a nivel mundial. 
+    Es presidenta y directora ejecutiva de AMD, una de las empresas más importantes en la industria de semiconductores. 
+    Su liderazgo ha sido clave para el crecimiento y posicionamiento de la compañía.
+    </p>
+
+    <img src="img/lisa2.png" class="img2">
+
+    <p class="p2">
+    Gracias a su gestión, AMD ha logrado competir directamente con grandes empresas tecnológicas. 
+    Ha impulsado el desarrollo de procesadores de alto rendimiento y eficiencia. 
+    Su trabajo la ha convertido en una de las mujeres más influyentes en el ámbito tecnológico.
+    </p>
+
+</body>
+</html>
